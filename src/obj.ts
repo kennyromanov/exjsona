@@ -1,5 +1,5 @@
 import { Obj } from '@/types';
-import { isset, isObject, getValue, RegexHelper } from '@/lib';
+import {isset, isObject, getValue, RegexHelper, isArray} from '@/lib';
 import { ObjError, ObjParseError } from '@/errors';
 
 
@@ -54,13 +54,30 @@ export function objToWithVariables(val: Obj, variables: Obj = {}, depth: number 
     for (const key in val) {
         if (!val.hasOwnProperty(key)) continue;
 
+
+        // Getting the data
+
         const value = val[key];
         const newVariables = { ...result, ...variables };
 
-        if (isObject(value))
+
+        // Transforming the value
+
+        if (isArray(value)) result[key] = value.map(i => {
+            if (isObject(i))
+                return objToWithVariables(i, newVariables, depth - 1);
+            else if (typeof i === 'string')
+                return strToWithVariables(i, newVariables);
+            else
+                return i;
+        });
+
+        else if (isObject(value))
             result[key] = objToWithVariables(value, newVariables, depth - 1);
+
         else if (typeof value === 'string')
             result[key] = strToWithVariables(value, newVariables);
+
         else
             result[key] = value;
     }
