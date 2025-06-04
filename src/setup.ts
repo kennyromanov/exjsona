@@ -5,7 +5,7 @@ import { Config, Obj } from '@/types';
 import { ObjError } from '@/errors';
 import { getObjectFile } from '@/config';
 import { objToWithVariables, DEFAULT_OBJ_DEPTH } from '@/obj';
-import config from '../.jsonvrc.json';
+import config from '../.exjsonarc.json';
 
 
 // Third-parties
@@ -17,7 +17,7 @@ const args = minimist(processArgs);
 
 // Constants
 
-export const CONFIG_NAME = '.jsonvrc.json';
+export const CONFIG_NAME = '.exjsonarc.json';
 
 export const DEFAULT_INPUT_FILE_NAME = '.input.v.json';
 
