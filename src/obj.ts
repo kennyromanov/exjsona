@@ -1,7 +1,6 @@
 import { Obj } from '@/types';
 import { isset, isObject, getValue, RegexHelper } from '@/lib';
-import { ObjError, ObjParseError } from "@/errors";
-import * as console from "node:console";
+import { ObjError, ObjParseError } from '@/errors';
 
 
 // Constants

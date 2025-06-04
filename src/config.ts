@@ -1,7 +1,6 @@
 import { Obj } from '@/types';
 import { getFile } from '@/lib';
 import { ObjTooDeepError } from '@/errors';
-import * as console from "node:console";
 import path from "path";
 
 

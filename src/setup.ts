@@ -1,7 +1,6 @@
 import fs from 'fs';
 import minimist from 'minimist';
 import * as path from 'path';
-import * as console from 'console';
 import { Config, Obj } from '@/types';
 import { ObjError } from '@/errors';
 import { getObjectFile } from '@/config';
@@ -67,7 +66,7 @@ export function fileToObjWithVariables(filename: string, variables: Obj = {}, de
         throw new ObjError(`Unable to get the JSON: File '${objectFilename}' does not exist`);
 
 
-    return objToWithVariables(object, variables, depth);
+    return objToWithVariables(object, variables, objDepth);
 }
 
 export function fileToWithVariables(input: string, output: string, variables: Obj = {}, depth: number = DEFAULT_DEPTH, objDepth: number = DEFAULT_OBJ_DEPTH): void {
@@ -90,7 +89,7 @@ export function init(): void {
 
     const output = outputArg || config?.output || DEFAULT_OUTPUT_FILE_NAME;
 
-    const depth = objDepthArg ?? config?.depth ?? DEFAULT_DEPTH;
+    const depth = depthArg ?? config?.depth ?? DEFAULT_DEPTH;
 
     const objDepth = objDepthArg ?? config?.objDepth ?? DEFAULT_OBJ_DEPTH;
 

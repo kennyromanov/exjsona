@@ -1,7 +1,6 @@
 import { Obj } from '@/types';
 import fs from 'fs';
 import { ObjParseError } from '@/errors';
-import * as console from "node:console";
 
 
 // Functions
