@@ -1,10 +1,10 @@
-import fs from 'fs';
-import minimist from 'minimist';
-import * as path from 'path';
 import { Config, Obj } from '@/types';
 import { ObjError } from '@/errors';
 import { getObjectFile } from '@/config';
 import { objToWithVariables, strToWithVariables, DEFAULT_OBJ_DEPTH } from '@/obj';
+import * as path from 'path';
+import fs from 'fs';
+import minimist from 'minimist';
 import config from '../.exjsonarc.json';
 
 
