@@ -39,7 +39,7 @@ vvv
 
 ## Installation
 
-1. The project requires Node v14 or higher. To install it, you need **npm**:
+1. The project requires Node v14 or higher. To install it, use **npm**:
 
 ```shell
 npm install --save-dev obj-preset
@@ -76,7 +76,7 @@ npx exjsona
 
 ## Tips & Tricks
 
-1. You can set all the preferences in **.exjsonarc.json**
+1. You can set all preferences in **.exjsonarc.json**
 
 ```json
 {
@@ -96,7 +96,7 @@ npx exjsona
 }
 ```
 
-3. You can use **arguments** to override the config:
+3. You can use **CLI** to override the config:
 
 ```shell
 npx exjsona --input .configs/prod.json --output env.json
