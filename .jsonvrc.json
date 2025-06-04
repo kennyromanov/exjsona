@@ -1,0 +1,8 @@
+{
+  "input": ".examples/prod/foo.json",
+  "output": "output.v.json",
+  "depth": 3,
+  "objDepth": 3,
+  "logging": 0,
+  "errorLogging": 1
+}
