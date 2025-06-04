@@ -107,6 +107,6 @@ export function use(): void {
 }
 
 
-export { objToWithVariables, strToWithVariables }
+export { getObjectFile, objToWithVariables, strToWithVariables }
 
 export default objToWithVariables;
