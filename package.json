@@ -1,6 +1,6 @@
 {
   "name": "exjsona",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A library for user-friendly variables in JSON",
   "keywords": [ "json", "json variables", "presets", "json presets", "configuration" ],
   "type": "commonjs",

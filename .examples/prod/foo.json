@@ -8,5 +8,7 @@
   "webmasterName": "webmaster",
   "webmasterEmail": "{webmasterName}@{siteDomain}",
 
+  "test": [ "123", "456" ],
+
   "debug": 0
 }

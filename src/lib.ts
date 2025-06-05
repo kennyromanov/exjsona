@@ -29,12 +29,12 @@ export function getValue(name: string, val: Obj): any {
 
     // Getting the value
 
-    let cursor: Obj | null = val;
+    let cursor: any = val;
 
     for (const nameItem of nameItems) {
         cursor = cursor[nameItem];
 
-        if (!cursor) return null;
+        if (!isset(cursor)) return null;
     }
 
 
