@@ -54,5 +54,5 @@ export function getFile(filename: string): string|null {
 // Helpers
 
 export class RegexHelper {
-    public static jsonVar = /\{(?<name>[a-zA-Z0-9]+)\}/g;
+    public static jsonVar = /\{(?<name>[a-zA-Z0-9.]+)\}/g;
 }

@@ -32,10 +32,10 @@ yarn-error.log*
 # Custom
 /node_modules
 /.vscode
-.obj
+/.thumbs.db
+/.prettierignore
+/.prettierrc.json
+/package-lock.json
+/bun.lockb
+/output.v.json
 .DS_Store
-.thumbs.db
-.prettierignore
-.prettierrc.json
-package-lock.json
-output.v.json

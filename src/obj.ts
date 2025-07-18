@@ -1,5 +1,5 @@
 import { Obj } from '@/types';
-import {isset, isObject, getValue, RegexHelper, isArray} from '@/lib';
+import { isset, isObject, getValue, RegexHelper, isArray } from '@/lib';
 import { ObjError, ObjParseError } from '@/errors';
 
 
@@ -58,7 +58,7 @@ export function objToWithVariables(val: Obj, variables: Obj = {}, depth: number 
         // Getting the data
 
         const value = val[key];
-        const newVariables = { ...result, ...variables };
+        const newVariables = { ...val, ...result, ...variables };
 
 
         // Transforming the value
