@@ -36,6 +36,7 @@ yarn-error.log*
 /.prettierignore
 /.prettierrc.json
 /package-lock.json
+/bun.lock
 /bun.lockb
 /output.v.json
 .DS_Store

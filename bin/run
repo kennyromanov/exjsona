@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { use } from '../src/index.js';
+import { use } from '../dist/index.es.js';
 
 use();
