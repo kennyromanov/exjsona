@@ -58,7 +58,7 @@ export function objToWithVariables(val: Obj, variables: Obj = {}, depth: number 
         // Getting the data
 
         const value = val[key];
-        const newVariables = { ...val, ...result, ...variables };
+        const newVariables = { ...val, ...variables, ...result };
 
 
         // Transforming the value

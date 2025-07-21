@@ -1,14 +1,17 @@
 {
   "name": "exjsona",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A User-Friendly Variables in JSON",
   "keywords": ["json", "json variables", "presets", "json presets", "configuration"],
-  "type": "commonjs",
-  "main": "dist/index.js",
+  "type": "module",
+  "main": "dist/index.es.js",
   "types": "dist/src/index.d.ts",
   "exports": {
-    "import": "./dist/index.js",
-    "require": "./dist/index.js"
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/src/index.d.ts"
+    }
   },
   "bin": {
     "exjsona": "./bin/run"
