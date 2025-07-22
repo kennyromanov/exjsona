@@ -1,8 +1,14 @@
 {
   "name": "exjsona",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A User-Friendly Variables in JSON",
-  "keywords": ["json", "json variables", "presets", "json presets", "configuration"],
+  "keywords": [
+    "json",
+    "json variables",
+    "presets",
+    "json presets",
+    "configuration"
+  ],
   "type": "module",
   "main": "dist/index.es.js",
   "types": "dist/src/index.d.ts",
@@ -14,12 +20,12 @@
     }
   },
   "bin": {
-    "exjsona": "./bin/run"
+    "exjsona": "./bin/run.mjs"
   },
   "scripts": {
     "build:types": "tsc && tsc-alias",
-    "build": "bin/build && npm run build:types",
-    "test": "npm run build && node bin/run",
+    "build": "bin/build.mjs && npm run build:types",
+    "test": "npm run build && bin/run.mjs",
     "prepare": "npm run build"
   },
   "files": [
